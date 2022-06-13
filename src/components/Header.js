@@ -1,4 +1,4 @@
-//import React from "react";
+import PropTypes from "prop-types";
 
 function Header({ title }) {
     return (
@@ -10,7 +10,18 @@ function Header({ title }) {
 
 Header.defaultProps = {
     title: "Task Tracker",
-  
-  }
+
+}
+
+Header.propTypes = {
+    title: PropTypes.string,
+
+}
+
+//CSS in JSX
+// const headingStyle = {
+//     color: "pink",
+//     backgroundColor: "black"
+// }
 
 export default Header;
